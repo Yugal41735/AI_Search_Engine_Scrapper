@@ -1,5 +1,3 @@
-pip install pytrends
-
 from datetime import datetime
 import requests
 import json
