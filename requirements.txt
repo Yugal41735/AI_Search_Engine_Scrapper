@@ -1,2 +1,4 @@
-pytrends
-plotly
+pytrends==4.9.0
+plotly==5.13.0
+streamlit==1.23.1
+requests==2.27.1
