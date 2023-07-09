@@ -200,10 +200,10 @@ def trends_data(inp):
     time.sleep(5)
 
     try:
-        pytrends = TrendReq(hl='en-US', tz=360, timeout=(10,25), retries = 0, backoff_factor=0)
+        pytrends = TrendReq(hl='en-US', tz=360, timeout=(10,25), retries = 2, backoff_factor=0.1)
 
     except:
-        pytrends = TrendReq(hl='en-US', tz=360, timeout=(10,25),proxies=['https://'+IPAddr,'https://34.203.233.13:80','https://35.201.123.31:880','https://174.70.1.210','https://139.162.252.174','https://204.2.218.145','https://130.41.101.105','https://85.92.119.65'], retries=0, backoff_factor=0, requests_args={'verify':False})
+        pytrends = TrendReq(hl='en-US', tz=360, timeout=(10,25),proxies=['https://'+IPAddr,'https://34.203.233.13:80','https://35.201.123.31:880','https://174.70.1.210','https://139.162.252.174','https://204.2.218.145','https://130.41.101.105','https://85.92.119.65'], retries=3, backoff_factor=0.1, requests_args={'verify':False})
 
 
     kw_list = [inp] # list of keywords to get data
